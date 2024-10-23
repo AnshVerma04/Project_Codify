@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <style>
     .footer-link {
@@ -12,11 +14,12 @@
         color: #111;
         text-align: start;
     }
+
     .a-link {
         text-decoration: none;
         color: #111;
     }
-   
+
     .icon-circle {
         display: inline-flex;
         justify-content: center;
@@ -30,19 +33,29 @@
         margin: 5px;
         transition: background-color 0.3s ease;
     }
+
     .icon-circle:hover {
         background-color: #ADD8E6;
     }
-    
+
+    .click:hover {
+        transform: scale(1.05);
+        /* Slight size increase */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        /* Larger black shadow on hover */
+    }
 </style>
+
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #ADD8E6;">  
+    <nav class="navbar navbar-expand-lg" style="background-color: #ADD8E6;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="Images/logo.png" alt="Logo" width="85" height="40">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,89 +72,161 @@
                     <li class="nav-item">
                         <a class="nav-link active me-3" aria-current="page" href="">Blog</a>
                     </li>
-                    
+
                 </ul>
                 <form class="d-flex">
-                    <button class="btn btn-outline-success"  style="font-size: 18px; font-weight: 500;" type="submit">Login</button>
+                    <button class="btn btn-outline-success" style="font-size: 18px; font-weight: 500;"
+                        type="submit">Login</button>
                 </form>
             </div>
         </div>
     </nav>
     <!-- Navbar end -->
-     <!-- header -->
-     <div class=" text-center my-4" style="border-bottom: 3px solid #ADD8E6; width: 100%; font-style: italic; color: #3d5c66;">
+
+
+    <!-- header -->
+    <div class=" text-center my-4"
+        style="border-bottom: 3px solid #ADD8E6; width: 100%; font-style: italic; color: #3d5c66;">
         <h5 class="mb-4">Welcome Future Developers</h5>
 
-      </div>
+    </div>
 
     <!-- Center content -->
     <div class="container text-center my-4">
-         <!-- first row start -->
+
+        <!-- first row start -->
         <div class="row align-items-start">
             <div class="col-12 col-md-4 mb-3 mb-md-0">
                 <img src="Images/2.jpg" alt="image" width="400" class="img-fluid">
             </div>
             <div class="col-12 col-md-4  mt-md-4">
-                <h2 >Explorer</h2>
+                <h2>Explorer</h2>
                 <div class="card rounded-4 mt-md-4" style="background-color: #D6E7ED; height: 200px;">
                     <div class="card-body mt-3">
                         <!-- Home icon -->
                         <a href="#" class="a-link icon-circle me-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor"
+                                class="bi bi-house" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
                             </svg>
                         </a>
                         <!-- Blog icon -->
                         <a href="#" class="a-link icon-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor" class="bi bi-file-earmark-medical" viewBox="0 0 16 16">
-                                <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor"
+                                class="bi bi-file-earmark-medical" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z" />
                             </svg>
                         </a>
                         <br>
                         <!-- Video icon -->
                         <a href="#" class="a-link icon-circle me-4 mt-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor"
+                                class="bi bi-camera-video" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z" />
                             </svg>
                         </a>
                         <!-- Ask Question -->
                         <a href="#" class="a-link icon-circle mt-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                                <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor"
+                                class="bi bi-chat-dots" viewBox="0 0 16 16">
+                                <path
+                                    d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                <path
+                                    d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637z" />
                             </svg>
                         </a>
                     </div>
                 </div>
-                <a class="col-7 btn mt-4 rounded-4 p-2 text-white" href="" style="background-color: #007BFF; font-size: 20px;">Ask Question</a>
-                <a class="col-7 btn mt-3 rounded-4 p-2 text-white" href="" style="background-color: #007BFF; font-size: 20px;">Our Courses</a>
+                <a class="col-7 btn mt-4 rounded-4 p-2 text-white click" href=""
+                    style="background-color: #007BFF; font-size: 20px;">Ask Question</a>
+                <a class="col-7 btn mt-3 rounded-4 p-2 text-white click" href=""
+                    style="background-color: #007BFF; font-size: 20px;">Our Courses</a>
             </div>
             <div class="col-12 col-md-4">
                 <img src="Images/1.jpg" alt="image" width="400" class="img-fluid">
             </div>
         </div>
         <!-- first row end -->
-         <!-- border -->
+        <!-- border -->
         <div style="border-bottom: 3px solid #ADD8E6; width: 100%; margin-top: 140px;">
         </div>
         <!-- second row  -->
         <div class="container text-center my-4">
             <h1 style="font-weight: 700; font-style: italic; font-size: 45px;">One platform to,</h1>
             <h2 style="color: #007BFF; font-weight: 700; font-style: italic; font-size: 40px;">ask your doubt</h2>
-            <p class="mt-4" style="font-size: 16px; text-align: justify; font-weight: 500;">Introducing our groundbreaking web application, meticulously crafted to address all your coding doubts, challenges, and learning needs. This innovative platform offers a host of features designed to make your coding journey smoother and more interactive. One of the standout features is our exclusive "Ask on Chat with Expert" option, which allows you to directly connect with experienced professionals and mentors. This real-time interaction enables you to seek personalized guidance, clear up confusion, and receive expert advice tailored to your specific coding challenges.</p>
-            <p class="mt-4" style="font-size: 16px; text-align: justify; font-weight: 500;">But that’s not all! Our platform also offers comprehensive video support, enabling you to communicate your concerns and receive feedback in a more dynamic and effective way. Whether you’re struggling with a particular code snippet or just need some advice on best practices, video support ensures that you can express your problems clearly and get them resolved faster.</p>
-            <p class="mt-4" style="font-size: 16px; text-align: justify; font-weight: 500;">Whether you’re a beginner looking to get started or an experienced coder seeking advanced insights, this platform is designed to help you overcome any coding obstacles you may face. Join us today and experience the transformative power of a supportive, interactive community that is dedicated to helping you succeed in your coding journey. Embrace the future of learning and elevate your skills with the resources and support that our web app provides!</p>
+            <p class="mt-4" style="font-size: 16px; text-align: justify; font-weight: 500;">Introducing our
+                groundbreaking web application, meticulously crafted to address all your coding doubts, challenges, and
+                learning needs. This innovative platform offers a host of features designed to make your coding journey
+                smoother and more interactive. One of the standout features is our exclusive "Ask on Chat with Expert"
+                option, which allows you to directly connect with experienced professionals and mentors. This real-time
+                interaction enables you to seek personalized guidance, clear up confusion, and receive expert advice
+                tailored to your specific coding challenges.</p>
+            <p class="mt-4" style="font-size: 16px; text-align: justify; font-weight: 500;">But that’s not all! Our
+                platform also offers comprehensive video support, enabling you to communicate your concerns and receive
+                feedback in a more dynamic and effective way. Whether you’re struggling with a particular code snippet
+                or just need some advice on best practices, video support ensures that you can express your problems
+                clearly and get them resolved faster.</p>
+            <p class="mt-4" style="font-size: 16px; text-align: justify; font-weight: 500;">Whether you’re a beginner
+                looking to get started or an experienced coder seeking advanced insights, this platform is designed to
+                help you overcome any coding obstacles you may face. Join us today and experience the transformative
+                power of a supportive, interactive community that is dedicated to helping you succeed in your coding
+                journey. Embrace the future of learning and elevate your skills with the resources and support that our
+                web app provides!</p>
         </div>
+        <!-- third row -->
+
+        <!-- border -->
+        <div style="border-bottom: 3px solid #ADD8E6; width: 100%; margin-top: 100px;">
+        </div>
+
+        <h2 style=" font-weight: 700; font-style: italic; font-size: 35px; margin-top: 20px;">What we offer? Let's see
+        </h2>
+
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row w-100">
+                <!-- First row -->
+                <div class="col-md-3 d-flex justify-content-center align-items-center">
+                    <img src="Images/learncoding.png" width="130" alt="">
+                </div>
+                <div class="col-md-9 d-flex align-items-center">
+                    <p class="ans" style="font-size: 22px; font-weight: 450; margin: 0;">
+                        >We are sharing our knowledge to you to show your intelligence to the world.
+                    </p>
+                </div>
+        
+                <!-- Spacer -->
+                <div class="w-100 my-1"></div>
+        
+                <!-- Second row -->
+                <div class="col-md-9 d-flex align-items-center align-items-end">
+                    <p class="ans" style="font-size: 22px; font-weight: 450; margin: 0;">
+                        >Click on the "Ask me" button to ask your question with an expert.
+                    </p>
+                </div>
+                <div class="col-md-3 d-flex justify-content-start align-items-center">
+                    <img src="Images/chatbox.png" width="130" alt="" style="font-size: 22px; font-weight: 450; margin: 0;">
+                </div>
+                
+            </div>
+        </div>
+        
+        
+
     </div>
     <!-- End Center content -->
-
+    <!-- footer start -->
     <footer style="background-color: aliceblue; padding: 40px 0;">
         <div class="container">
             <div class="row  text-md-start align-items-start">
                 <!-- Company Info -->
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <img src="Images/logo.png" width="80" height="36" alt="Company Logo" class="mb-3">
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde corporis, voluptatum repellat accusantium id, amet at reprehenderit, adipisci illo esse commodi eveniet deleniti. Nulla delectus doloremque nisi ab, repudiandae quibusdam!</p>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                        corporis, voluptatum repellat accusantium id, amet at reprehenderit, adipisci illo esse commodi
+                        eveniet deleniti. Nulla delectus doloremque nisi ab, repudiandae quibusdam!</p>
                 </div>
                 <!-- Company Links -->
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
@@ -169,9 +254,14 @@
             </div>
         </div>
     </footer>
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
