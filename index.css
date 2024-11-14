@@ -1,0 +1,43 @@
+.footer-link {
+    text-decoration: none;
+    color: #111;
+    text-align: start;
+}
+
+.a-link {
+    text-decoration: none;
+    color: #111;
+}
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* .icon-circle:hover {
+    background-color: #ADD8E6;
+} */
+
+.click:hover {
+    transform: scale(1.05);
+    /* Slight size increase */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    /* Larger black shadow on hover */
+}
+
+/* navbar buttons hover effect */
+.head:hover {
+    transform: scale(1.12);
+    /* Slight size increase */
+    
+    /* Larger black shadow on hover */
+}

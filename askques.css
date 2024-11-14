@@ -1,0 +1,45 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.file-input {
+    max-width: 400px; /* Set a max width for the file input container */
+}
+
+.file-input .input-group-text {
+    background-color: blue;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 5px 10px; /* Smaller padding */
+}
+
+.submit-btn {
+    color: white;
+    background-color: blue;
+    border-radius: 12px;
+    padding: 5px 15px; /* Smaller padding */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* navbar buttons hover effect */
+.head:hover {
+        transform: scale(1.12);
+        /* Slight size increase */
+        
+        /* Larger black shadow on hover */
+    }
+    .footer-link {
+        text-decoration: none;
+        color: #111;
+        text-align: start;
+    }
